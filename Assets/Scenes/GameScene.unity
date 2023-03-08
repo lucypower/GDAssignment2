@@ -389,20 +389,24 @@ PrefabInstance:
       value: RoomManager
       objectReference: {fileID: 0}
     - target: {fileID: 3855366034286590615, guid: 11aa5e2d018bcc846b60bb00736f71f2, type: 3}
+      propertyPath: m_end
+      value: 
+      objectReference: {fileID: 3588201188138818090, guid: a3fc546036d76f9448ccf87660c1b18c, type: 3}
+    - target: {fileID: 3855366034286590615, guid: 11aa5e2d018bcc846b60bb00736f71f2, type: 3}
       propertyPath: m_top.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3855366034286590615, guid: 11aa5e2d018bcc846b60bb00736f71f2, type: 3}
       propertyPath: m_left.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3855366034286590615, guid: 11aa5e2d018bcc846b60bb00736f71f2, type: 3}
       propertyPath: m_right.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3855366034286590615, guid: 11aa5e2d018bcc846b60bb00736f71f2, type: 3}
       propertyPath: m_bottom.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3855366034286590615, guid: 11aa5e2d018bcc846b60bb00736f71f2, type: 3}
       propertyPath: m_top.Array.data[4]

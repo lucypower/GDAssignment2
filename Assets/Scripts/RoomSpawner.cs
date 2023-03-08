@@ -49,6 +49,11 @@ public class RoomSpawner : MonoBehaviour
                     m_roomSpawned = true;
                     break;
 
+                case 'c':
+
+                    m_roomSpawned = true;
+                    break;
+
                 default:
                     break;
             }            
@@ -59,7 +64,18 @@ public class RoomSpawner : MonoBehaviour
     {
         if (other.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            RoomSpawner room = other.GetComponent<RoomSpawner>();
+
+            if (room != null)
+            {
+                if (!room.m_roomSpawned && !m_roomSpawned)
+                {
+                    Instantiate(m_roomManager.m_end, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                }
+            }
+
+            m_roomSpawned = true;
         }
     }
 }

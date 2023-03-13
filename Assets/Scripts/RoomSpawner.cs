@@ -5,13 +5,15 @@ using UnityEngine;
 public class RoomSpawner : MonoBehaviour
 {
     RoomManager m_roomManager;
+    GameManager m_gameManager;
 
+    [HideInInspector] public bool m_roomSpawned;    
     public char m_roomDir;
-    [SerializeField] public bool m_roomSpawned;
 
     private void Awake()
     {
         m_roomManager = GameObject.Find("RoomManager").GetComponent<RoomManager>();
+        m_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void Start()
@@ -23,40 +25,46 @@ public class RoomSpawner : MonoBehaviour
     {
         if (!m_roomSpawned)
         {
-            switch (m_roomDir)
+            if (m_gameManager.m_roomCount < m_gameManager.m_roomsAllowed)
             {
-                case 't':
+                switch (m_roomDir)
+                {
+                    case 't':
 
-                    Instantiate(m_roomManager.m_bottom[Random.Range(0, m_roomManager.m_bottom.Length)], transform.position, Quaternion.identity);
-                    m_roomSpawned = true;
-                    break;
+                        Instantiate(m_roomManager.m_bottom[Random.Range(0, m_roomManager.m_bottom.Length)], transform.position, Quaternion.identity);
+                        m_roomSpawned = true;
+                        m_gameManager.m_roomCount++;
+                        break;
 
-                case 'b':
+                    case 'b':
 
-                    Instantiate(m_roomManager.m_top[Random.Range(0, m_roomManager.m_top.Length)], transform.position, Quaternion.identity);
-                    m_roomSpawned = true;
-                    break;
+                        Instantiate(m_roomManager.m_top[Random.Range(0, m_roomManager.m_top.Length)], transform.position, Quaternion.identity);
+                        m_roomSpawned = true;
+                        m_gameManager.m_roomCount++;
+                        break;
 
-                case 'l':
+                    case 'l':
 
-                    Instantiate(m_roomManager.m_right[Random.Range(0, m_roomManager.m_right.Length)], transform.position, Quaternion.identity);
-                    m_roomSpawned = true;
-                    break;
+                        Instantiate(m_roomManager.m_right[Random.Range(0, m_roomManager.m_right.Length)], transform.position, Quaternion.identity);
+                        m_roomSpawned = true;
+                        m_gameManager.m_roomCount++;
+                        break;
 
-                case 'r':
+                    case 'r':
 
-                    Instantiate(m_roomManager.m_left[Random.Range(0, m_roomManager.m_left.Length)], transform.position, Quaternion.identity);
-                    m_roomSpawned = true;
-                    break;
+                        Instantiate(m_roomManager.m_left[Random.Range(0, m_roomManager.m_left.Length)], transform.position, Quaternion.identity);
+                        m_roomSpawned = true;
+                        m_gameManager.m_roomCount++;
+                        break;
 
-                case 'c':
-
-                    m_roomSpawned = true;
-                    break;
-
-                default:
-                    break;
-            }            
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                Instantiate(m_roomManager.m_end, transform.position, Quaternion.identity);
+            }
         }        
     }
 
@@ -72,10 +80,14 @@ public class RoomSpawner : MonoBehaviour
                 {
                     Instantiate(m_roomManager.m_end, transform.position, Quaternion.identity);
                     Destroy(gameObject);
+                }   
+                else if (!m_roomSpawned && room.m_roomSpawned)
+                {
+                    m_roomManager.m_deadEndRooms.Add(transform.parent.gameObject);
                 }
             }
 
             m_roomSpawned = true;
         }
-    }
+    } 
 }

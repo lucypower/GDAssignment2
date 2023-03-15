@@ -7,7 +7,7 @@ public class RoomSpawner : MonoBehaviour
     RoomManager m_roomManager;
     GameManager m_gameManager;
 
-    [HideInInspector] public bool m_roomSpawned;    
+    [HideInInspector] public bool m_roomSpawned;
     public char m_roomDir;
 
     private void Awake()
@@ -64,8 +64,9 @@ public class RoomSpawner : MonoBehaviour
             else
             {
                 Instantiate(m_roomManager.m_end, transform.position, Quaternion.identity);
+                m_roomSpawned = true;
             }
-        }        
+        }  
     }
 
     private void OnTriggerEnter(Collider other)
@@ -80,12 +81,8 @@ public class RoomSpawner : MonoBehaviour
                 {
                     Instantiate(m_roomManager.m_end, transform.position, Quaternion.identity);
                     Destroy(gameObject);
-                }   
-                else if (!m_roomSpawned && room.m_roomSpawned)
-                {
-                    m_roomManager.m_deadEndRooms.Add(transform.parent.gameObject);
                 }
-            }
+            }            
 
             m_roomSpawned = true;
         }

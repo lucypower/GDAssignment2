@@ -106,6 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4878165870972456082}
+  - component: {fileID: 1018030687604617115}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -130,6 +131,18 @@ Transform:
   m_Father: {fileID: 3600598859402104422}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1018030687604617115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2923685331086596438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690e5ba5d4f51694f9b1c6be0adf93a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3328292603403176539
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,8 +315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d44aaf2a0c9d948a58444393090bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_roomDir: 98
   m_roomSpawned: 0
+  m_roomDir: 98
 --- !u!1 &4312664583131974069
 GameObject:
   m_ObjectHideFlags: 0

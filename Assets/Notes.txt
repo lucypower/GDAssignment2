@@ -1,0 +1,3 @@
+z is forward, x is left and right
+
+use this consistently throughout room layout

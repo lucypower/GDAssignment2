@@ -8,10 +8,6 @@ public class CameraController : MonoBehaviour
     
     [SerializeField] private GameObject m_player;
 
-    private void Start()
-    {
-        //Invoke("FindCameras", 2.0f);
-    }
 
     public GameObject FindClosestCamera()
     {
@@ -37,10 +33,6 @@ public class CameraController : MonoBehaviour
         return closestLocation;
     }
 
-    public void FindCameras()
-    {
-        
-    }
 
     public void MoveCamera()
     {

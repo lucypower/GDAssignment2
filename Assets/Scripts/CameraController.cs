@@ -4,10 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
-{
-    
+{    
     [SerializeField] private GameObject m_player;
-
 
     public GameObject FindClosestCamera()
     {

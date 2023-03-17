@@ -6,15 +6,19 @@ public class Player : MonoBehaviour
 {
     PlayerController m_playerController;
     Rigidbody m_RB;
+    Projectile m_projectile;   
     
     private Vector3 m_moveInput;
     [SerializeField] private float m_speed;
+    [SerializeField] private float m_projectileSpeed; // can be managed by player stats later on
     [SerializeField] private GameObject m_bullet;
     [SerializeField] private Transform m_bulletStart;
 
     private void Awake()
     {
         m_playerController = new PlayerController();
+
+        m_projectile = m_bullet.GetComponent<Projectile>();
 
         m_RB = GetComponent<Rigidbody>();
     }
@@ -49,7 +53,12 @@ public class Player : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
+        var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
+
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        rb.velocity = m_projectileSpeed * transform.forward;
+
+        Destroy(bullet, 1f);
     }
 
     private void OnDisable()

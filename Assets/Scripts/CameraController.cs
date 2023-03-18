@@ -38,14 +38,4 @@ public class CameraController : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, targetLocation, 4 * Time.deltaTime);
     }
-
-
-
-
-    //[SerializeField] private Transform m_originalLocation;
-
-    //public void MoveCamera(Vector3 coords)
-    //{        
-    //    transform.position = Vector3.Lerp(transform.position, transform.position + coords, 4 * Time.deltaTime);
-    //}
 }

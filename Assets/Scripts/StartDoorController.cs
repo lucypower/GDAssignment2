@@ -4,7 +4,7 @@ using System.Runtime.ConstrainedExecution;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DoorController : MonoBehaviour
+public class StartDoorController : MonoBehaviour
 {    
     private bool m_collision;
     CameraController m_cameraController;

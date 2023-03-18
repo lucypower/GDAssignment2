@@ -15,7 +15,7 @@ D:/Unity/GDAssignment2
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-52315
+65029
 Successfully changed project path to: D:/Unity/GDAssignment2
 D:/Unity/GDAssignment2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/Unity/GDAssignment2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 161.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 90.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.4f1 (76dd1f94b339)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.4f1/Editor/Data/Resources/UnitySubsystems
@@ -63,99 +63,98 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011729 seconds.
+Registered in 0.011699 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 147.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 89.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.265 seconds
+- Completed reload, in  0.808 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1266ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (808ms)
+		BeginReloadAssembly (101ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (950ms)
-			LoadAssemblies (118ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (96ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (291ms)
-				TypeCache.Initialize (291ms)
-					TypeCache.ScanAssembly (289ms)
+			SetupTypeCache (141ms)
+				TypeCache.Initialize (140ms)
+					TypeCache.ScanAssembly (138ms)
 				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (568ms)
+			SetupLoadedEditorAssemblies (339ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (57ms)
-				SetLoadedEditorAssemblies (7ms)
-				RefreshPlugins (148ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (312ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				InitializePlatformSupportModulesInManaged (68ms)
+				SetLoadedEditorAssemblies (12ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003848 seconds.
-Android Extension - Scanning For ADB Devices 7585 ms
+Registered in 0.004067 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 137.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 81.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.180 seconds
+- Completed reload, in  1.388 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4181ms)
-		BeginReloadAssembly (238ms)
+	ReloadAssembly (1389ms)
+		BeginReloadAssembly (253ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (108ms)
-		EndReloadAssembly (3526ms)
-			LoadAssemblies (1190ms)
+			CreateAndSetChildDomain (134ms)
+		EndReloadAssembly (1006ms)
+			LoadAssemblies (110ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (546ms)
-				TypeCache.Initialize (542ms)
-					TypeCache.ScanAssembly (535ms)
+			SetupTypeCache (289ms)
+				TypeCache.Initialize (285ms)
+					TypeCache.ScanAssembly (278ms)
 				ResolveRequiredComponents (4ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (125ms)
-			SetupLoadedEditorAssemblies (1485ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (526ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (157ms)
-				RefreshPlugins (137ms)
-				BeforeProcessingInitializeOnLoad (261ms)
-				ProcessInitializeOnLoadAttributes (786ms)
-				ProcessInitializeOnLoadMethodAttributes (116ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (82ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (295ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.26 seconds
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (57.8 KB). Loaded Objects now: 4196.
+Unloading 3737 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (57.9 KB). Loaded Objects now: 4200.
 Memory consumption went from 0.56 GB to 0.56 GB.
-Total: 3.390900 ms (FindLiveObjects: 0.358500 ms CreateObjectMapping: 0.098300 ms MarkObjects: 2.867200 ms  DeleteObjects: 0.065000 ms)
+Total: 4.669100 ms (FindLiveObjects: 0.518800 ms CreateObjectMapping: 0.106300 ms MarkObjects: 3.914800 ms  DeleteObjects: 0.127100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -169,77 +168,60 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 12613.744806 seconds.
-  path: Assets/Scripts/AddRoomToList.cs
-  artifactKey: Guid(690e5ba5d4f51694f9b1c6be0adf93a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AddRoomToList.cs using Guid(690e5ba5d4f51694f9b1c6be0adf93a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5245569f4964f8f3a5729810711303') in 0.029494 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 556.480132 seconds.
-  path: Assets/Scripts/RoomManager.cs
-  artifactKey: Guid(944b5f3909f58e143bc57d18ae55e307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RoomManager.cs using Guid(944b5f3909f58e143bc57d18ae55e307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cdc47c877acbb461a86fd0cbd0b763c') in 0.001643 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.233755 seconds.
-  path: Assets/Scripts/StartDoorController.cs
-  artifactKey: Guid(54aabac9b4b094749aadedf00273db40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/StartDoorController.cs using Guid(54aabac9b4b094749aadedf00273db40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4701a4575d6133a1b8bffb57e4e4555b') in 0.001836 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 78.143102 seconds.
-  path: Assets/Scripts/StartDoorController.cs
-  artifactKey: Guid(54aabac9b4b094749aadedf00273db40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/StartDoorController.cs using Guid(54aabac9b4b094749aadedf00273db40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19732321cd4091fdf522ac32b844c30a') in 0.001445 seconds 
+  Time since last request: 8184.580049 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '67123da4b81419de979c3a6719b49fc8') in 0.140132 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003457 seconds.
+Registered in 0.003810 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.779 seconds
+- Completed reload, in  1.317 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2780ms)
-		BeginReloadAssembly (456ms)
+	ReloadAssembly (1318ms)
+		BeginReloadAssembly (179ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (125ms)
-		EndReloadAssembly (2055ms)
-			LoadAssemblies (326ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1033ms)
+			LoadAssemblies (148ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (596ms)
-				TypeCache.Initialize (591ms)
-					TypeCache.ScanAssembly (584ms)
+			SetupTypeCache (343ms)
+				TypeCache.Initialize (338ms)
+					TypeCache.ScanAssembly (325ms)
 				ResolveRequiredComponents (4ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (158ms)
-			SetupLoadedEditorAssemblies (1001ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (442ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (79ms)
-				SetLoadedEditorAssemblies (6ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (8ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (158ms)
-				ProcessInitializeOnLoadAttributes (685ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (288ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3726 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (25.4 KB). Loaded Objects now: 4199.
-Memory consumption went from 0.56 GB to 0.56 GB.
-Total: 3.564800 ms (FindLiveObjects: 0.463900 ms CreateObjectMapping: 0.092200 ms MarkObjects: 2.986700 ms  DeleteObjects: 0.020400 ms)
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.4 KB). Loaded Objects now: 4214.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 3.788600 ms (FindLiveObjects: 0.585000 ms CreateObjectMapping: 0.099100 ms MarkObjects: 3.072700 ms  DeleteObjects: 0.029800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -253,17 +235,1305 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 543.501575 seconds.
-  path: Assets/Scripts/DoorController.cs
-  artifactKey: Guid(d6418bf1d8d6b2f479a518237814bbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorController.cs using Guid(d6418bf1d8d6b2f479a518237814bbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af17ceea53e8c065887e634032bffa9d') in 0.015826 seconds 
+  Time since last request: 34.413429 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '81fe4561c16ab442808fb6beb765b95c') in 0.072177 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.033688 seconds.
-  path: Assets/Scripts/CameraController.cs
-  artifactKey: Guid(c7fc126af807fb846b7fd2c9e45ed29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CameraController.cs using Guid(c7fc126af807fb846b7fd2c9e45ed29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b3170caf3b2077bb2f2830307b0966') in 0.001686 seconds 
+  Time since last request: 0.658260 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '45fe183618173f9148714ae4af6fc5df') in 0.013874 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004287 seconds.
+Registered in 0.003782 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1284ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (992ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+				TypeCache.Initialize (326ms)
+					TypeCache.ScanAssembly (315ms)
+				ResolveRequiredComponents (5ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (433ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (277ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.4 KB). Loaded Objects now: 4217.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 3.843200 ms (FindLiveObjects: 0.492000 ms CreateObjectMapping: 0.136400 ms MarkObjects: 3.165400 ms  DeleteObjects: 0.047300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26.971107 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a3db0ebe483e342d0e955ced1fe41273') in 0.079126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.527031 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '2c16fe5e1c1a81757e8fc6f3581593ad') in 0.010883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.648181 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b5353315d16d8a6af6bf1c10cb8ae056') in 0.012917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.589129 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '95404dda9b939dc567db37f477274a47') in 0.012269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.013000 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a8b7fd1322f1ad934affefa46825cc75') in 0.011655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.578274 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '296714aa0872316c830a95d69de0f56c') in 0.013072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.116180 seconds.
+  path: Assets/Prefabs/RoomLayouts/BossRoom.prefab
+  artifactKey: Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BossRoom.prefab using Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a47c6b4883d66be6ae9870f727a014e9') in 0.013807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.610048 seconds.
+  path: Assets/Prefabs/RoomLayouts/BossRoom.prefab
+  artifactKey: Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BossRoom.prefab using Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6ec49dab439d928edf0c1bc1f3f09908') in 0.013293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.205109 seconds.
+  path: Assets/Prefabs/RoomLayouts/BR.prefab
+  artifactKey: Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BR.prefab using Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'f447fccd441cc9c00a7b7a23977a8f8d') in 0.012565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.607132 seconds.
+  path: Assets/Prefabs/RoomLayouts/BR.prefab
+  artifactKey: Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BR.prefab using Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'de3943213204cd8a5d2b3d13f9c821e3') in 0.011487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.027279 seconds.
+  path: Assets/Prefabs/RoomLayouts/EndRoom.prefab
+  artifactKey: Guid(a3fc546036d76f9448ccf87660c1b18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/EndRoom.prefab using Guid(a3fc546036d76f9448ccf87660c1b18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '49db0e4bd6287657e314a019e7e01e41') in 0.011392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.841835 seconds.
+  path: Assets/Prefabs/RoomLayouts/L.prefab
+  artifactKey: Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/L.prefab using Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'fa9db259fd7b1c5a1c03c97b3bc658da') in 0.011208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.813929 seconds.
+  path: Assets/Prefabs/RoomLayouts/L.prefab
+  artifactKey: Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/L.prefab using Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b6bf32afb4fb3e04d45dfddf63a243c9') in 0.013326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.395717 seconds.
+  path: Assets/Prefabs/RoomLayouts/R.prefab
+  artifactKey: Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/R.prefab using Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '9fa605af619eb597431160144a95aa5f') in 0.011086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.801662 seconds.
+  path: Assets/Prefabs/RoomLayouts/R.prefab
+  artifactKey: Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/R.prefab using Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'f91445c6f99e872f521bd9588ee012bf') in 0.010006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.414782 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '8eeb4926f0b62393da3e2fa331522ad6') in 0.012999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.804072 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b51fedd78fa9cd66087fa80540438b03') in 0.012987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.032056 seconds.
+  path: Assets/Prefabs/RoomLayouts/T.prefab
+  artifactKey: Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/T.prefab using Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0a5688c02feda21283ff0cde4e1eedb5') in 0.014862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.723309 seconds.
+  path: Assets/Prefabs/RoomLayouts/T.prefab
+  artifactKey: Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/T.prefab using Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0dda9cdac65fc788d5054305f661ed7b') in 0.011619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.617983 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'c9375740114b6cc467caf85ad7fbcd15') in 0.011826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.996583 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3800e7499b45ab39a89133cc654a3166') in 0.011691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.048329 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBL.prefab
+  artifactKey: Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBL.prefab using Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '16869617d58f857f0f4e592bdd252c2b') in 0.012652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.599492 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBL.prefab
+  artifactKey: Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBL.prefab using Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '4697ca87d2ac0c46a3a3e256accde3ae') in 0.012226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.818173 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBR.prefab
+  artifactKey: Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBR.prefab using Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '635cb746af412dc4f6e8433717c6459f') in 0.013055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.390036 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBR.prefab
+  artifactKey: Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBR.prefab using Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '1a6ff1440a48bb459299d7b58e37d8bc') in 0.011042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.826828 seconds.
+  path: Assets/Prefabs/RoomLayouts/TL.prefab
+  artifactKey: Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TL.prefab using Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '64da7680ee052a8ca7dec02723b53ed3') in 0.013287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.205341 seconds.
+  path: Assets/Prefabs/RoomLayouts/TL.prefab
+  artifactKey: Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TL.prefab using Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3d1fd1dc335edca63588fea9feb9ac35') in 0.010621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.605306 seconds.
+  path: Assets/Prefabs/RoomLayouts/TLR.prefab
+  artifactKey: Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TLR.prefab using Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '498439ace4149680da069c513bc0b613') in 0.013196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.633879 seconds.
+  path: Assets/Prefabs/RoomLayouts/TLR.prefab
+  artifactKey: Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TLR.prefab using Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '542476dc55203cb552d9a96239dc3e49') in 0.012788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.035114 seconds.
+  path: Assets/Prefabs/RoomLayouts/TR.prefab
+  artifactKey: Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TR.prefab using Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a7700f2f8bde7b91637d6ed2cdf29f87') in 0.012795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.867359 seconds.
+  path: Assets/Prefabs/RoomLayouts/TR.prefab
+  artifactKey: Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TR.prefab using Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '14577a6bfe9c4c84d308c38d5793def9') in 0.012161 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003385 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.151 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1151ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (296ms)
+				TypeCache.Initialize (292ms)
+					TypeCache.ScanAssembly (284ms)
+				ResolveRequiredComponents (4ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (409ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (268ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.4 KB). Loaded Objects now: 4220.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 3.810300 ms (FindLiveObjects: 0.843500 ms CreateObjectMapping: 0.122300 ms MarkObjects: 2.813600 ms  DeleteObjects: 0.028500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003690 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.205 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1205ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (947ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (313ms)
+				TypeCache.Initialize (309ms)
+					TypeCache.ScanAssembly (300ms)
+				ResolveRequiredComponents (4ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (419ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (270ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3731 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (32.6 KB). Loaded Objects now: 4223.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 5.703400 ms (FindLiveObjects: 0.416600 ms CreateObjectMapping: 0.092200 ms MarkObjects: 5.124800 ms  DeleteObjects: 0.067700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 54.585362 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3f5ca23f1134024d8b0d3ae7aa4f85de') in 0.075804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBR.prefab
+  artifactKey: Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBR.prefab using Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '31002fa47bc8a9146f4eb329da5d00d8') in 0.012693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/RoomLayouts/BR.prefab
+  artifactKey: Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BR.prefab using Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '1fc7b5d57acd2d0caed9f58a6d4c75d3') in 0.012908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBL.prefab
+  artifactKey: Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBL.prefab using Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '4c0bafb30eae71952c18fa0eae8bec13') in 0.016650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/RoomLayouts/R.prefab
+  artifactKey: Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/R.prefab using Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '4b659134181d2c5935351be871344238') in 0.014644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/RoomLayouts/TL.prefab
+  artifactKey: Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TL.prefab using Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '569f696eb4a45c0da538a765015759b2') in 0.014322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Prefabs/RoomLayouts/T.prefab
+  artifactKey: Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/T.prefab using Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '15e6953b0fdc97bb8cb8673e2767b5de') in 0.016330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/RoomLayouts/L.prefab
+  artifactKey: Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/L.prefab using Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'd2c0eeb47cdb01d0fa90b5132ed94d4b') in 0.015414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '977cfa955b7b9affe5a4be311343f9b6') in 0.017678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '30dd7f89431271f3f9b618679c90bb69') in 0.015525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.702384 seconds.
+  path: Assets/Prefabs/RoomLayouts/ItemRoom.prefab
+  artifactKey: Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/ItemRoom.prefab using Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '642b22feef1c278d9512d6362c78d972') in 0.016603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.555809 seconds.
+  path: Assets/Prefabs/RoomLayouts/ItemRoom.prefab
+  artifactKey: Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/ItemRoom.prefab using Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '728fa56f4b4e2f03f00246836493a521') in 0.011680 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003892 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.295 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1296ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1003ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+				TypeCache.Initialize (341ms)
+					TypeCache.ScanAssembly (325ms)
+				ResolveRequiredComponents (4ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (286ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.5 KB). Loaded Objects now: 4226.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 4.227200 ms (FindLiveObjects: 0.496800 ms CreateObjectMapping: 0.099700 ms MarkObjects: 3.577600 ms  DeleteObjects: 0.050900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 50.978552 seconds.
+  path: Assets/Prefabs/RoomLayouts/ItemRoom.prefab
+  artifactKey: Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/ItemRoom.prefab using Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '90a4e4649e2db470ffcd43647b5f3d9a') in 0.076504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.768284 seconds.
+  path: Assets/Prefabs/RoomLayouts/ItemRoom.prefab
+  artifactKey: Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/ItemRoom.prefab using Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '4b0a8eeaa2b77fe9246112c1f3880b0d') in 0.013316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.878633 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '854ca6d6e38c16f4f5bfee2cf0257b59') in 0.011765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.855645 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '751cb08e0e59d2e0284b203c92cfc77f') in 0.009721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.830905 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '18488d1c2f11ddb551485417ae87e704') in 0.010764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.138257 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e327e497796dd4d1587fe5a30d7c75eb') in 0.012302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.168524 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '4570aba68771ad4fa412a7b6d60227c3') in 0.011684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.385391 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e1a78df57c0683b51a47f500dcf1ba09') in 0.014200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.829211 seconds.
+  path: Assets/Prefabs/RoomLayouts/BossRoom.prefab
+  artifactKey: Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BossRoom.prefab using Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '697c979ced1ffac0ad60069332615e45') in 0.011785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.389498 seconds.
+  path: Assets/Prefabs/RoomLayouts/BossRoom.prefab
+  artifactKey: Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BossRoom.prefab using Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0723b2afa7c60fff6a9896b7ef47f939') in 0.012509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.602893 seconds.
+  path: Assets/Prefabs/RoomLayouts/BR.prefab
+  artifactKey: Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BR.prefab using Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '78e92eb96374ed0ad5e653a2a55e2f4e') in 0.011038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.409476 seconds.
+  path: Assets/Prefabs/RoomLayouts/BR.prefab
+  artifactKey: Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BR.prefab using Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3ec36b9ea3804af25d3bbcf5b812882f') in 0.011700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.153921 seconds.
+  path: Assets/Prefabs/RoomLayouts/L.prefab
+  artifactKey: Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/L.prefab using Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '1a5b3af832afae76e13e1d75a94e7641') in 0.012592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.160980 seconds.
+  path: Assets/Prefabs/RoomLayouts/L.prefab
+  artifactKey: Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/L.prefab using Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '16b1a1fef11d0a5739ee9327100572b9') in 0.013403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.542720 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '8eb7d177ffe69d2a3e7b03bb9ef24a36') in 0.012199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.021400 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '50c607c45ddfc50cfe4cf619d972b2be') in 0.012543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.633297 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '26a0da2e4db6a892774b0b18fdc28859') in 0.016302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.689691 seconds.
+  path: Assets/Prefabs/RoomLayouts/R.prefab
+  artifactKey: Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/R.prefab using Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b911c3ea9aca42cf5feabfea9fe3af7d') in 0.010353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.599906 seconds.
+  path: Assets/Prefabs/RoomLayouts/R.prefab
+  artifactKey: Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/R.prefab using Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '112f26c37bc1cd2898155cb2004bca30') in 0.010711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.907876 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'bedc5288d7e9e9a24cf040222b5061c3') in 0.013370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.976321 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'bf95850b965129a2ed43274436d7d84b') in 0.012090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.280675 seconds.
+  path: Assets/Prefabs/RoomLayouts/T.prefab
+  artifactKey: Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/T.prefab using Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '215d03e91758d1c0a622e371540081b2') in 0.012832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.197094 seconds.
+  path: Assets/Prefabs/RoomLayouts/T.prefab
+  artifactKey: Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/T.prefab using Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '597e86254b74cb0181dc604d697db1dc') in 0.012566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.474867 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e808a53be03bfc174dbc7c8f9a0ba6c3') in 0.010368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.272711 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '81cff606efaee05572849c5df2e2fe34') in 0.010887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.705705 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'be8ecd78386bc98c05be339b34e181c8') in 0.013300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.095934 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBL.prefab
+  artifactKey: Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBL.prefab using Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0a003fc16234f28b910bdfbb5c20a6a0') in 0.012907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.583834 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBL.prefab
+  artifactKey: Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBL.prefab using Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '641d957a381597c5dde88901f1742bb6') in 0.013074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.953852 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBR.prefab
+  artifactKey: Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBR.prefab using Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '70163bedca86fa190e9a7581d02b60f5') in 0.013374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.815888 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBR.prefab
+  artifactKey: Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBR.prefab using Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3f063ab9fd9389997aca53efb0e0db4d') in 0.013260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.357718 seconds.
+  path: Assets/Prefabs/RoomLayouts/TL.prefab
+  artifactKey: Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TL.prefab using Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '82d9c043cf9a7adc8bb96b6987a71039') in 0.012346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.489828 seconds.
+  path: Assets/Prefabs/RoomLayouts/TL.prefab
+  artifactKey: Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TL.prefab using Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '8109b74f9a259b848a6b7a1c247236e0') in 0.013085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.201350 seconds.
+  path: Assets/Prefabs/RoomLayouts/TLR.prefab
+  artifactKey: Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TLR.prefab using Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '1d445effc740d6600b1652f49775bab1') in 0.011482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.599152 seconds.
+  path: Assets/Prefabs/RoomLayouts/TLR.prefab
+  artifactKey: Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TLR.prefab using Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3e84f60d350e698cafa45aa2523f1aae') in 0.012239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.439804 seconds.
+  path: Assets/Prefabs/RoomLayouts/TR.prefab
+  artifactKey: Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TR.prefab using Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '5db4592fbd3f2affd52628abdd2d2900') in 0.011153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.869159 seconds.
+  path: Assets/Prefabs/RoomLayouts/TR.prefab
+  artifactKey: Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TR.prefab using Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '514ece5204d8f873e302de3380c241e6') in 0.012558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.476847 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'ee64532cf23ed95c543b07a14d447a23') in 0.013309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.062335 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '35361ab1c4874e1d4c4c8f97044d6731') in 0.012068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.418462 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '1db29cffa2961352e111dd1314c870bf') in 0.013379 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003357 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.163 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1164ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (906ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (293ms)
+				TypeCache.Initialize (289ms)
+					TypeCache.ScanAssembly (282ms)
+				ResolveRequiredComponents (4ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (271ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.4 KB). Loaded Objects now: 4229.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 3.291400 ms (FindLiveObjects: 0.448400 ms CreateObjectMapping: 0.099500 ms MarkObjects: 2.715300 ms  DeleteObjects: 0.026200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 78.692762 seconds.
+  path: Assets/Prefabs/RoomLayouts/StartRoom.prefab
+  artifactKey: Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/StartRoom.prefab using Guid(54c4d57266ec7944293b74b1a48cf03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '5b5bd53e68af9581703c4a8ec75d3a06') in 0.068851 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003438 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.139 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1140ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (882ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+				TypeCache.Initialize (288ms)
+					TypeCache.ScanAssembly (279ms)
+				ResolveRequiredComponents (4ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (400ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (266ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.5 KB). Loaded Objects now: 4232.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 4.260200 ms (FindLiveObjects: 0.476700 ms CreateObjectMapping: 0.227000 ms MarkObjects: 3.470000 ms  DeleteObjects: 0.083400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16.487692 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '68bdb476489f605926baec9dc92592a4') in 0.068549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.112007 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3d667ed3c443a9634de3f434ca6e92c3') in 0.013187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.677322 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '70c771557872bf17a9c0fe930cd54197') in 0.014039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.758204 seconds.
+  path: Assets/Prefabs/Directional Light.prefab
+  artifactKey: Guid(12edb3f064be69a44ac4936b2cbbdf0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Directional Light.prefab using Guid(12edb3f064be69a44ac4936b2cbbdf0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e4971e2ae3514475837c30e08eef5b') in 0.007088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005850 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(ec370e60a91ec294dad41950a3f7fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(ec370e60a91ec294dad41950a3f7fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf29fa9fe38d7146c5bc36834bf47b93') in 0.011797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.335702 seconds.
+  path: Assets/Prefabs/RoomLayouts/B.prefab
+  artifactKey: Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/B.prefab using Guid(e6a2fa3d2abc7bb41b91e1bb4b46bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '241b7162662bd9cc2cef882be491decd') in 0.013592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.946389 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6e3140d61d85adbe88b12f9e131dc0fc') in 0.016597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.328642 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6b532ba1c0e337843da5aff4c88890e4') in 0.012338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.669371 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '457592d78a942fdeffcd7cdd2f77927c') in 0.012833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.996774 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'd2a10b7a28d10eccd76f97bcca042191') in 0.010034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.793419 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a16f97174dbf5b491fe4cb226715ce8a') in 0.012679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.432373 seconds.
+  path: Assets/Prefabs/RoomLayouts/BL.prefab
+  artifactKey: Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BL.prefab using Guid(9968e438fe4e7f34d91c2fc45da10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e04fc262582170bf7d76891cc4afd334') in 0.012675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.225591 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e68405719c13fd4f8934254453c87cfc') in 0.012652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.153499 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '7b571ac4dbfc9956cfaca5656860fa7e') in 0.013027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.465881 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '19f1c60bbaecd56febf1250889ec526f') in 0.014302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.531097 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '9c9e7e01d4a57597ee35b6a5af58afc8') in 0.011469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.317016 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e9c414f1dc06408d5f004e235154c71a') in 0.013675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.678942 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '1da92475ed1349d6ab15ae30872d4d80') in 0.013542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.419386 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6d73dae99e9f6e53e021291b6b4b8b07') in 0.014722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.007779 seconds.
+  path: Assets/Prefabs/RoomLayouts/BLR.prefab
+  artifactKey: Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BLR.prefab using Guid(32bcf23c373c8ce44a46fb021324def4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '66655cb23eb63378325d8f139f2055f3') in 0.010795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.806973 seconds.
+  path: Assets/Prefabs/RoomLayouts/BossRoom.prefab
+  artifactKey: Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BossRoom.prefab using Guid(d41fdbaa19e88ba4280dca1b56c692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'ef3e842090d623ea67b07331c61e7e95') in 0.014298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.818819 seconds.
+  path: Assets/Prefabs/RoomLayouts/BR.prefab
+  artifactKey: Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/BR.prefab using Guid(1f73a1442319e954fbf201387a7c8b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '75af8495a53af4bbc06915803686b059') in 0.011691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.051643 seconds.
+  path: Assets/Prefabs/RoomLayouts/ItemRoom.prefab
+  artifactKey: Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/ItemRoom.prefab using Guid(28792261d7b83544cb2f9548f714bb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '04631c3965f4af320d254134e7e8eb0b') in 0.011322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.023173 seconds.
+  path: Assets/Prefabs/RoomLayouts/L.prefab
+  artifactKey: Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/L.prefab using Guid(115400f81a5ffb247b0caf7fab279329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'fa1bb5b9b353ef1dc26830a5a78a9997') in 0.012459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.469361 seconds.
+  path: Assets/Prefabs/RoomLayouts/LR.prefab
+  artifactKey: Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/LR.prefab using Guid(bffb00d92f712d44c9fa9e3d8bb69e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '93f2b6fe8eed7f5249967a83bdfa520f') in 0.012669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.226083 seconds.
+  path: Assets/Prefabs/RoomLayouts/R.prefab
+  artifactKey: Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/R.prefab using Guid(fbd03252bcd51c1459a12667c72de7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3563d59e4804b79e468c8778d4e85ba6') in 0.011738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.437254 seconds.
+  path: Assets/Prefabs/RoomLayouts/T.prefab
+  artifactKey: Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/T.prefab using Guid(e1429efee2ea90c43bcd4d71bdb115dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b2ec4f79d6d4ea5c225b8f92f0c060ea') in 0.010656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.494164 seconds.
+  path: Assets/Prefabs/RoomLayouts/TB.prefab
+  artifactKey: Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TB.prefab using Guid(391cc4c632338d649abc4fa1c8f81d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '977fb40afdde01f14385eb802b729278') in 0.010793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.666983 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBL.prefab
+  artifactKey: Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBL.prefab using Guid(18ad6b2246325764aa73c2207cdaf34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3700bfbb890feb50d296074d50a56623') in 0.013970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.268141 seconds.
+  path: Assets/Prefabs/RoomLayouts/TBR.prefab
+  artifactKey: Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TBR.prefab using Guid(a9506ecc459ecb146b25b46c36b5243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0acd9506687b339deddc13163699d166') in 0.012788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.859598 seconds.
+  path: Assets/Prefabs/RoomLayouts/TL.prefab
+  artifactKey: Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TL.prefab using Guid(5dd1bfd8495edf14aaf17620745c6bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '67df108218084fa40b86ea10f0249a2b') in 0.012566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.038373 seconds.
+  path: Assets/Prefabs/RoomLayouts/TLR.prefab
+  artifactKey: Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TLR.prefab using Guid(9953810f45b680a42a91f81c7d382d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0614e24b1d99b82a4fe2e0aee0247b69') in 0.012048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.835805 seconds.
+  path: Assets/Prefabs/RoomLayouts/TR.prefab
+  artifactKey: Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RoomLayouts/TR.prefab using Guid(0fd23cc87fd4d934483459a7dff6c2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6db10d2c8771b5785e643b2d69e33227') in 0.010449 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005100 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (921ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+				TypeCache.Initialize (294ms)
+					TypeCache.ScanAssembly (286ms)
+				ResolveRequiredComponents (4ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (25.5 KB). Loaded Objects now: 4235.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 4.218000 ms (FindLiveObjects: 0.526200 ms CreateObjectMapping: 0.342300 ms MarkObjects: 3.328000 ms  DeleteObjects: 0.020200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004223 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\GDAssignment2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.293 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1294ms)
+		BeginReloadAssembly (179ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1000ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (321ms)
+				TypeCache.Initialize (317ms)
+					TypeCache.ScanAssembly (304ms)
+				ResolveRequiredComponents (5ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (456ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (298ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3731 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (32.5 KB). Loaded Objects now: 4238.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 4.148400 ms (FindLiveObjects: 0.509100 ms CreateObjectMapping: 0.253500 ms MarkObjects: 3.291900 ms  DeleteObjects: 0.092400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

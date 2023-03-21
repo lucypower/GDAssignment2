@@ -1313,8 +1313,8 @@ GameObject:
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6607976994741701943
 Transform:
@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 8d2e7ecf4b9b28d44afbe902d4fb96a4, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c1914c9422ab3fb4782d7a9d4161612d, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &9009961998366811516
 GameObject:

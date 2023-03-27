@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] private float m_damage;
+    [SerializeField] private int m_damage;
 
     PlayerStats m_playerStats;
 
@@ -13,9 +13,13 @@ public class EnemyAttack : MonoBehaviour
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
     }
 
-    public void DoDamage(float damage)
+    public void DoDamage(int damage)
     {
-        m_playerStats.m_health -= damage;
+        int health = PlayerPrefs.GetInt(m_playerStats.m_playerHealth);
+        health -= damage;
+
+        PlayerPrefs.SetInt(m_playerStats.m_playerHealth, health);
+        PlayerPrefs.Save();
     }
 
     private void OnCollisionEnter(Collision collision)

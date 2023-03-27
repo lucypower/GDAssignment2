@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
 {
     PlayerController m_playerController;
     Rigidbody m_RB;
-    Projectile m_projectile;   
     
     private Vector3 m_moveInput;
     [SerializeField] private float m_speed;
@@ -17,8 +16,6 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         m_playerController = new PlayerController();
-
-        m_projectile = m_bullet.GetComponent<Projectile>();
 
         m_RB = GetComponent<Rigidbody>();
     }

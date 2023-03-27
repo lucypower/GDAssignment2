@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private int m_floorNo;
+    [HideInInspector] public int m_floorNo;
     [HideInInspector] public int m_roomsAllowed;
     [HideInInspector] public int m_roomCount;
 

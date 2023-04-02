@@ -4,34 +4,30 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    [HideInInspector] public string m_playerHealth = "PlayerHealth";
+    public int m_playerHealth;
+    [HideInInspector] public string m_playerHealthEnd = "PlayerHealth";
     [HideInInspector] public string m_playerWalkSpeed = "WalkSpeed";
     [HideInInspector] public string m_playerRange = "Range";
     [HideInInspector] public string m_playerDamage = "Damage";
+    [HideInInspector] public string m_playerBPS = "BulletPerSecond";
     GameManager m_gameManager;
 
     private void Start()
     {
         m_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
-        if (!PlayerPrefs.HasKey(m_playerHealth))
-        {
-            PlayerPrefs.SetInt(m_playerHealth, 100);
-        } // TODO: Delete this pref on exit of game and new game loaded
+        int currentFloor = PlayerPrefs.GetInt(m_gameManager.m_floorNumber);
 
-        if (!PlayerPrefs.HasKey(m_playerWalkSpeed))
+        if (currentFloor == 1)
         {
-            PlayerPrefs.SetInt(m_playerWalkSpeed, 1);
-        }
-
-        if (!PlayerPrefs.HasKey(m_playerRange))
-        {
-            PlayerPrefs.SetInt(m_playerRange, 2);
-        }
-
-        if (!PlayerPrefs.HasKey(m_playerDamage))
-        {
+            m_playerHealth = 100;
+            PlayerPrefs.SetInt(m_playerHealthEnd, 100);
+            PlayerPrefs.SetInt(m_playerWalkSpeed, 10);
+            PlayerPrefs.SetInt(m_playerRange, 7);
             PlayerPrefs.SetInt(m_playerDamage, 2);
+            PlayerPrefs.SetInt(m_playerBPS, 2);
+
+            PlayerPrefs.Save();
         }
     }
 

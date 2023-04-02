@@ -15,11 +15,7 @@ public class EnemyAttack : MonoBehaviour
 
     public void DoDamage(int damage)
     {
-        int health = PlayerPrefs.GetInt(m_playerStats.m_playerHealth);
-        health -= damage;
-
-        PlayerPrefs.SetInt(m_playerStats.m_playerHealth, health);
-        PlayerPrefs.Save();
+        m_playerStats.m_playerHealth -= damage;
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -111,3 +111,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemStats: ffffffff0000000001000000
+  m_itemStat: WalkSpeed
+  m_statNumber: 10

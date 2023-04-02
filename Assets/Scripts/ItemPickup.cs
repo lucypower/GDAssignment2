@@ -7,6 +7,10 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] private List<int> m_itemStats; // TODO: Look into using a dictionary instead
     PlayerStats m_playerStats;
 
+    [SerializeField] private string m_itemStat;
+    [SerializeField] private int m_statNumber;
+
+
     private void Awake()
     {
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
@@ -23,43 +27,40 @@ public class ItemPickup : MonoBehaviour
 
     private void CheckItemStats()
     {
-        for (int i = 0; i < m_itemStats.Count; i++)
+        switch (m_itemStat)
         {
-            if (m_itemStats[i] != 0) // is currently adding list index not contents, also going into the wrong case
-            {
-                switch (m_itemStats[i])
-                {
-                    case 0: // walk speed
+            case "WalkSpeed":
 
-                        int speed = PlayerPrefs.GetInt(m_playerStats.m_playerWalkSpeed);
-                        speed += m_itemStats[i];
-                        PlayerPrefs.SetInt(m_playerStats.m_playerWalkSpeed, speed);
-                        PlayerPrefs.Save();
+                int speed = PlayerPrefs.GetInt(m_playerStats.m_playerWalkSpeed);
+                speed += m_statNumber;
 
-                        break;
+                PlayerPrefs.SetInt(m_playerStats.m_playerWalkSpeed, speed);
+                PlayerPrefs.Save();
 
-                    case 1: // range
+                break;
 
-                        int range = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
-                        range += m_itemStats[i];
-                        PlayerPrefs.SetInt(m_playerStats.m_playerRange, range);
-                        PlayerPrefs.Save();
+            case "Range":
 
-                        break;
+                int range = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
+                range += m_statNumber;
 
-                    case 2: // damage
+                PlayerPrefs.SetInt(m_playerStats.m_playerRange, range);
+                PlayerPrefs.Save();
 
-                        int damage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
-                        damage += m_itemStats[i];
-                        PlayerPrefs.SetInt(m_playerStats.m_playerDamage, damage);
-                        PlayerPrefs.Save();
+                break;
 
-                        break;
+            case "Damage":
 
-                    default:
-                        break;
-                }
-            }
+                int damage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
+                damage += m_statNumber;
+
+                PlayerPrefs.SetInt(m_playerStats.m_playerDamage, damage);
+                PlayerPrefs.Save();
+
+                break;
+
+            default:
+                break;
         }
     }
 }

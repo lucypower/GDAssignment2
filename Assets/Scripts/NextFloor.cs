@@ -6,25 +6,33 @@ using UnityEngine.SceneManagement;
 public class NextFloor : MonoBehaviour
 {
     GameManager m_gameManager;
-    public int currentFloor;
+    PlayerStats m_playerStats;
+    [HideInInspector] public int m_currentFloor;
 
     private void Awake()
     {
         m_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        currentFloor = PlayerPrefs.GetInt(m_gameManager.m_floorNumber);
+        m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+        m_currentFloor = PlayerPrefs.GetInt(m_gameManager.m_floorNumber);
     }
 
     public void LoadNextFloor()
     {
         SetFloor();
+        SaveHealth();
         Invoke(nameof(Reload), 0.5f);
     }
 
     private void SetFloor()
     {
-        currentFloor++;
-        PlayerPrefs.SetInt(m_gameManager.m_floorNumber, currentFloor);
+        m_currentFloor++;
+        PlayerPrefs.SetInt(m_gameManager.m_floorNumber, m_currentFloor);
         PlayerPrefs.Save();
+    }
+
+    private void SaveHealth()
+    {
+        PlayerPrefs.SetInt(m_playerStats.m_playerHealthEnd, m_playerStats.m_playerHealth);
     }
 
     private void Reload()

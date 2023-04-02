@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (!PlayerPrefs.HasKey(m_floorNumber))
+        {
+            PlayerPrefs.SetInt(m_floorNumber, 1);
+        }
+
         int currentFloor = PlayerPrefs.GetInt(m_floorNumber);
         m_roomCount = 0;
         m_roomsAllowed = ((3 * currentFloor) + Random.Range(4, 6));

@@ -5,17 +5,24 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     PlayerController m_playerController;
+    PlayerStats m_playerStats;
     Rigidbody m_RB;
     
     private Vector3 m_moveInput;
-    [SerializeField] private float m_speed;
-    [SerializeField] private float m_projectileSpeed; // can be managed by player stats later on
+
+    private float m_speed;
+    private float m_projectileSpeed; 
+
     [SerializeField] private GameObject m_bullet;
     [SerializeField] private Transform m_bulletStart;
+
+    private bool m_isShooting;
+    
 
     private void Awake()
     {
         m_playerController = new PlayerController();
+        m_playerStats = GetComponent<PlayerStats>();
 
         m_RB = GetComponent<Rigidbody>();
     }
@@ -33,9 +40,12 @@ public class Player : MonoBehaviour
 
         transform.rotation = Quaternion.AngleAxis(-angle + 90, Vector3.up);
 
-        if (m_playerController.Player.Shoot.WasPressedThisFrame())
+        if (m_playerController.Player.Shoot.IsPressed())
         {
-            Shoot();
+            if (!m_isShooting)
+            {
+                Shoot();
+            }
         }
     }
 
@@ -44,18 +54,32 @@ public class Player : MonoBehaviour
         Vector2 getInput = m_playerController.Player.Move.ReadValue<Vector2>();
 
         m_moveInput = new Vector3(getInput.x, 0, getInput.y);
+        m_speed = PlayerPrefs.GetInt("WalkSpeed");
 
         m_RB.velocity = m_moveInput * m_speed;
     }
 
     public void Shoot()
     {
+        m_isShooting = true;
+
         var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
+
+        m_projectileSpeed = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
 
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         rb.velocity = m_projectileSpeed * transform.forward;
 
+        int time = PlayerPrefs.GetInt(m_playerStats.m_playerBPS);
+        StartCoroutine(ShootingDelay(time));
+
         Destroy(bullet, 1f);
+    }
+
+    IEnumerator ShootingDelay(int waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        m_isShooting = false;
     }
 
     private void OnDisable()

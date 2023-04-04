@@ -7,6 +7,10 @@ public class EnemyMovement : MonoBehaviour
 {
     private NavMeshAgent m_agent;
     private GameObject m_player;
+    private DoorController m_doorController;
+
+    GameObject m_parent;
+
     private string m_enemyType;
 
     [SerializeField] private float m_radius;
@@ -18,6 +22,9 @@ public class EnemyMovement : MonoBehaviour
         m_agent = GetComponent<NavMeshAgent>();
         m_player = GameObject.Find("Player");
         m_enemyType = gameObject.tag;
+
+        m_parent = transform.root.gameObject;
+        m_doorController = m_parent.GetComponentInChildren<DoorController>();
     }
 
     private void Start()
@@ -27,47 +34,50 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        switch (m_enemyType)
+        if (m_doorController.m_doorsActive)
         {
-            case "FollowPlayer":
+            switch (m_enemyType)
+            {
+                case "FollowPlayer":
 
-                float distanceFromPlayer = Vector3.Distance(transform.position, m_player.transform.position);
+                    float distanceFromPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
-                if (distanceFromPlayer <= m_followRadius)
-                {
-                    FollowPlayer();
-                }
+                    if (distanceFromPlayer <= m_followRadius)
+                    {
+                        FollowPlayer();
+                    }
 
-                if (m_agent.remainingDistance <= 0.1f)
-                {
-                    Wander();
-                }
+                    if (m_agent.remainingDistance <= 0.1f)
+                    {
+                        Wander();
+                    }
 
-                break;
+                    break;
 
-            case "RunFromPlayer":
+                case "RunFromPlayer":
 
-                float distFromPlayer = Vector3.Distance(transform.position, m_player.transform.position);
+                    float distFromPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
-                if (distFromPlayer <= m_runAwayRadius)
-                {
-                    RunAway();
-                }
+                    if (distFromPlayer <= m_runAwayRadius)
+                    {
+                        RunAway();
+                    }
 
-                if (m_agent.remainingDistance <= 0.1f)
-                {
-                    Wander();
-                }
+                    if (m_agent.remainingDistance <= 0.1f)
+                    {
+                        Wander();
+                    }
 
-                break;
+                    break;
 
-            case "RandomMove":
+                case "RandomMove":
 
-                break;
+                    break;
 
-            default:
-                break;
-        }
+                default:
+                    break;
+            }
+        }        
     }
 
     public void Wander()

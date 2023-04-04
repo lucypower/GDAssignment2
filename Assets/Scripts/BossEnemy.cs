@@ -15,10 +15,18 @@ public class BossEnemy : MonoBehaviour
 
     private NavMeshAgent m_agent;
     private GameObject m_player;
+    private DoorController m_doorController;
+    private GameObject m_parent;
+
+    [SerializeField] private GameObject m_bullet;
+    [SerializeField] private Transform m_bulletStart;
 
     public int m_chargeSpeed;
     public int m_radius;
+    public int m_bulletSpeed;
     private bool m_hasCharged;
+    private bool m_hasShot;
+
     IEnumerator m_coroutine;
 
     private void Awake()
@@ -26,30 +34,55 @@ public class BossEnemy : MonoBehaviour
         m_agent = GetComponent<NavMeshAgent>();
         m_player = GameObject.Find("Player");
 
+        m_parent = transform.parent.gameObject;
+        m_doorController = m_parent.GetComponentInChildren<DoorController>();
+
         m_coroutine = ChargeReset(5);
+
+        m_enemyStates = EnemyStates.IDLE;
     }
 
     private void Update()
     {
         switch (m_enemyStates)
         {
-            case EnemyStates.CHARGING:                
+            case EnemyStates.CHARGING:
 
-                Charging();
+                //if (m_doorController.m_doorsActive)
+                //{
+                //    if (!m_hasCharged)
+                //    {
+                //        Charging();
+                //    }
+                //}
+
+                if (!m_hasCharged)
+                {
+                    Charging();
+                }
 
                 break;
 
             case EnemyStates.SHOOTING:
 
+                Shooting();
+
                 break;
 
             case EnemyStates.IDLE:
 
-                Idle();
-
-                if (m_coroutine == null)
+                if (m_agent.remainingDistance <= 0.1f)
                 {
-                    m_enemyStates = EnemyStates.CHARGING;
+                    int random = Random.Range(0, 2);
+
+                    if (random == 0)
+                    {
+                        Idle();
+                    }
+                    else if (random == 1)
+                    {
+                        m_enemyStates = EnemyStates.SHOOTING;
+                    }
                 }
 
                 break;
@@ -61,33 +94,79 @@ public class BossEnemy : MonoBehaviour
 
     private void Charging()
     {
-        m_agent.SetDestination(m_player.transform.position);
-        m_agent.speed = m_chargeSpeed;
-
-        if (m_agent.remainingDistance <= 0.1f)
+        if (m_doorController.m_doorsActive)
         {
-            StartCoroutine(ChargeReset(5));
+            m_hasCharged = true;
+
+            m_agent.SetDestination(m_player.transform.position);
+            m_agent.speed = m_chargeSpeed;
+
             m_enemyStates = EnemyStates.IDLE;
+            StartCoroutine(ChargeReset(5));
+
+
+            //if (m_agent.remainingDistance <= 0.5f)
+            //{
+            //    m_enemyStates = EnemyStates.IDLE;
+            //    Debug.Log("if loop");
+            //    Debug.Log(m_enemyStates);
+            //    StartCoroutine(ChargeReset(5));
+            //}
 
         }
-
-
-        //m_hasCharged = true;
-
-        //StartCoroutine(ChargeReset(5));
-
     }
 
     private void Shooting()
     {
+        var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
 
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * m_bulletSpeed;
+
+        Destroy(bullet, 2f);
+
+        m_enemyStates = EnemyStates.IDLE;
+
+        //m_agent.ResetPath();
+
+        //Quaternion lookRotation = Quaternion.LookRotation(m_player.transform.position - transform.position);
+        //Quaternion targetRotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime);
+
+        //m_player.transform.rotation = targetRotation;
+
+        //if (transform.rotation == targetRotation)
+        //{
+        //    var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
+
+        //    Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        //    rb.velocity = transform.forward * m_bulletSpeed;
+
+        //    Destroy(bullet, 2f);
+
+        //    m_hasShot = true;
+        //}
+
+        //Debug.Log("Shooting");
+
+        //if (m_hasShot)
+        //{
+        //    m_enemyStates = EnemyStates.IDLE;
+        //    m_hasShot = false;
+        //}
     }
 
     private void Idle()
     {
+        if (!m_hasCharged)
+        {
+            m_enemyStates = EnemyStates.CHARGING;
+        }
+
         NavMeshHit hit;
         Vector3 direction = Random.insideUnitSphere * m_radius;
         direction += transform.position;
+
+        float distFromPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
         NavMesh.SamplePosition(direction, out hit, Random.Range(0, m_radius), 1);
 
@@ -99,5 +178,7 @@ public class BossEnemy : MonoBehaviour
     {
         Debug.Log("Coroutine");
         yield return new WaitForSeconds(waitTime);
+
+        m_hasCharged = false;
     }
 }

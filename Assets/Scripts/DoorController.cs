@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] m_doors;
-    //[SerializeField] private GameObject m_lighting;
+    public GameObject[] m_doors;
+    public bool m_doorsActive;
 
     EnemyManager m_enemyManager;
 
     private void Awake()
     {
-        m_enemyManager = gameObject.GetComponentInParent<EnemyManager>();        
+        m_enemyManager = gameObject.GetComponentInParent<EnemyManager>();
+        m_doorsActive = false;
     }
 
     private void OnTriggerStay(Collider other)
@@ -23,6 +24,7 @@ public class DoorController : MonoBehaviour
                 for (int i = 0; i < m_doors.Length; i++)
                 {
                     m_doors[i].SetActive(true);
+                    m_doorsActive = true;
                 }
             }
             else
@@ -30,6 +32,7 @@ public class DoorController : MonoBehaviour
                 for (int i = 0; i < m_doors.Length; i++)
                 {
                     m_doors[i].SetActive(false);
+                    m_doorsActive = false;
                 }
             }
         }

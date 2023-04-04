@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7654520213956628118}
   - component: {fileID: 5975750250918687083}
   - component: {fileID: 6086261072135662201}
+  - component: {fileID: -607057101999483435}
   m_Layer: 0
   m_Name: BossTemp
   m_TagString: RunFromPlayer
@@ -33,9 +34,10 @@ Transform:
   m_LocalPosition: {x: -3.3215182, y: 0, z: -3.0801387}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6482907404770943256}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &879325567356246248
 MeshFilter:
@@ -94,7 +96,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3106512950801451740}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e433907f58156db4f9e6ad92615f1bc1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -148,3 +150,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_damage: 10
+--- !u!114 &-607057101999483435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106512950801451740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e32321262605ee4b939c66d5537f3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_enemyStates: 2
+  m_bullet: {fileID: 1765967415851065233, guid: 0e7ff9198e6ab5046a492b93dd36fd03, type: 3}
+  m_bulletStart: {fileID: 6482907404770943256}
+  m_chargeSpeed: 12
+  m_radius: 15
+  m_bulletSpeed: 2
+--- !u!1 &8524429013322633462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6482907404770943256}
+  m_Layer: 0
+  m_Name: TempShoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6482907404770943256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524429013322633462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.573, y: 0.305, z: 0.415}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4344746076608896418}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -72,6 +72,11 @@ public class EnemyMovement : MonoBehaviour
 
                 case "RandomMove":
 
+                    if (m_agent.remainingDistance <= 0.1f)
+                    {
+                        Wander();
+                    }
+
                     break;
 
                 default:

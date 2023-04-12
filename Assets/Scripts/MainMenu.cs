@@ -11,4 +11,9 @@ public class MainMenu : MonoBehaviour
 
         PlayerPrefs.SetInt("FloorNumber", 1);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -5738040128965623039}
   - component: {fileID: 7083629675857353018}
   - component: {fileID: -1957231117140622808}
+  - component: {fileID: 7421011276353166310}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: RunFromPlayer
@@ -36,7 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4365051714376642745
 MeshFilter:
@@ -164,3 +165,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_damage: 10
+--- !u!114 &7421011276353166310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998674130248589965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0a85e3503d8d64da4a7dfeed74bd09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_health: 1

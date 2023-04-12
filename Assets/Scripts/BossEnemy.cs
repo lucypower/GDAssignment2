@@ -25,9 +25,8 @@ public class BossEnemy : MonoBehaviour
     public int m_radius;
     public int m_bulletSpeed;
     private bool m_hasCharged;
-    private bool m_hasShot;
 
-    IEnumerator m_coroutine;
+    //IEnumerator m_coroutine;
 
     private void Awake()
     {
@@ -37,7 +36,7 @@ public class BossEnemy : MonoBehaviour
         m_parent = transform.parent.gameObject;
         m_doorController = m_parent.GetComponentInChildren<DoorController>();
 
-        m_coroutine = ChargeReset(5);
+        //m_coroutine = ChargeReset(5);
 
         m_enemyStates = EnemyStates.IDLE;
     }
@@ -102,17 +101,7 @@ public class BossEnemy : MonoBehaviour
             m_agent.speed = m_chargeSpeed;
 
             m_enemyStates = EnemyStates.IDLE;
-            StartCoroutine(ChargeReset(5));
-
-
-            //if (m_agent.remainingDistance <= 0.5f)
-            //{
-            //    m_enemyStates = EnemyStates.IDLE;
-            //    Debug.Log("if loop");
-            //    Debug.Log(m_enemyStates);
-            //    StartCoroutine(ChargeReset(5));
-            //}
-
+            StartCoroutine(ChargeReset(3));
         }
     }
 
@@ -126,33 +115,6 @@ public class BossEnemy : MonoBehaviour
         Destroy(bullet, 2f);
 
         m_enemyStates = EnemyStates.IDLE;
-
-        //m_agent.ResetPath();
-
-        //Quaternion lookRotation = Quaternion.LookRotation(m_player.transform.position - transform.position);
-        //Quaternion targetRotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime);
-
-        //m_player.transform.rotation = targetRotation;
-
-        //if (transform.rotation == targetRotation)
-        //{
-        //    var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
-
-        //    Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        //    rb.velocity = transform.forward * m_bulletSpeed;
-
-        //    Destroy(bullet, 2f);
-
-        //    m_hasShot = true;
-        //}
-
-        //Debug.Log("Shooting");
-
-        //if (m_hasShot)
-        //{
-        //    m_enemyStates = EnemyStates.IDLE;
-        //    m_hasShot = false;
-        //}
     }
 
     private void Idle()

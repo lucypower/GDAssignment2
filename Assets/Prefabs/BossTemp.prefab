@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5975750250918687083}
   - component: {fileID: 6086261072135662201}
   - component: {fileID: -607057101999483435}
+  - component: {fileID: 1581828013588198501}
   m_Layer: 0
   m_Name: BossTemp
   m_TagString: RunFromPlayer
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3e577d4a34f624fa956bc236c4948d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_damage: 10
+  m_damage: 20
 --- !u!114 &-607057101999483435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +169,19 @@ MonoBehaviour:
   m_chargeSpeed: 12
   m_radius: 15
   m_bulletSpeed: 2
+--- !u!114 &1581828013588198501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106512950801451740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0a85e3503d8d64da4a7dfeed74bd09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_health: 50
 --- !u!1 &8524429013322633462
 GameObject:
   m_ObjectHideFlags: 0

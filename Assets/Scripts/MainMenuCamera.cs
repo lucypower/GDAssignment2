@@ -38,4 +38,9 @@ public class MainMenuCamera : MonoBehaviour
     {
         m_targetLocation = m_tutorialMenu;
     }
+    
+    public void QuitMenu()
+    {
+        m_targetLocation = m_quitMenu;
+    }
 }

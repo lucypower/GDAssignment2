@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 287299014111025277}
   - component: {fileID: 3130927462585504403}
   m_Layer: 0
-  m_Name: ItemTemp 1
+  m_Name: WalkSpeed-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f30e1591f3831fc4eba90de9c3201e99, type: 2}
+  - {fileID: 2100000, guid: 9c63ef52d52cc0e49a1c4a4c5e7d6d61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,6 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c33e93cdcc5d7f74288569a9e346e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_itemStats: ffffffff0000000001000000
   m_itemStat: WalkSpeed
-  m_statNumber: 10
+  m_statNumber: -2

@@ -16,7 +16,6 @@ public class EnemyDeath : MonoBehaviour
         m_enemyStats = GetComponent<EnemyStats>();
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
 
-        m_playerDamage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
     }
 
     public void Death()
@@ -29,6 +28,7 @@ public class EnemyDeath : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            m_playerDamage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
             m_enemyStats.m_health -= m_playerDamage;
             Destroy(collision.gameObject);
 

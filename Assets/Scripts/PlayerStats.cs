@@ -10,7 +10,9 @@ public class PlayerStats : MonoBehaviour
     [HideInInspector] public string m_playerRange = "Range";
     [HideInInspector] public string m_playerDamage = "Damage";
     [HideInInspector] public string m_playerBPS = "BulletPerSecond";
+
     GameManager m_gameManager;
+    [SerializeField] private GameObject m_deathMenu;
 
     private void Start()
     {
@@ -33,10 +35,10 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        //if (m_health <= 0)
-        //{
-        //    // TODO: Rest of player death
-        //    //PlayerPrefs.SetInt(m_gameManager.m_floorNumber, 1);
-        //}
+        if (m_playerHealth <= 0)
+        {
+            m_deathMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }

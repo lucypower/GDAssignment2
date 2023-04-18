@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     PlayerController m_playerController;
     PlayerStats m_playerStats;
     Rigidbody m_RB;
+    PauseMenu m_pause;
     
     private Vector3 m_moveInput;
 
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private GameObject m_bullet;
     [SerializeField] private Transform m_bulletStart;
+    [SerializeField] private GameObject m_pauseMenu;
 
     private bool m_isShooting;
     
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     {
         m_playerController = new PlayerController();
         m_playerStats = GetComponent<PlayerStats>();
+        m_pause = m_pauseMenu.GetComponent<PauseMenu>();
 
         m_RB = GetComponent<Rigidbody>();
     }
@@ -46,6 +49,11 @@ public class Player : MonoBehaviour
             {
                 Shoot();
             }
+        }
+
+        if (m_playerController.Player.Pause.WasPressedThisFrame())
+        {
+            Pause();
         }
     }
 
@@ -80,6 +88,12 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         m_isShooting = false;
+    }
+
+    public void Pause()
+    {
+        Debug.Log("Pause");
+        m_pause.PauseGame();
     }
 
     private void OnDisable()

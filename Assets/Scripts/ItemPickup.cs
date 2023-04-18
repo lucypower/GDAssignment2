@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    [SerializeField] private List<int> m_itemStats; // TODO: Look into using a dictionary instead
     PlayerStats m_playerStats;
 
     [SerializeField] private string m_itemStat;

@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private Vector3 m_moveInput;
 
     private float m_speed;
-    private float m_projectileSpeed; 
+    private float m_projectileRange; 
 
     [SerializeField] private GameObject m_bullet;
     [SerializeField] private Transform m_bulletStart;
@@ -73,10 +73,10 @@ public class Player : MonoBehaviour
 
         var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
 
-        m_projectileSpeed = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
+        m_projectileRange = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
 
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        rb.velocity = m_projectileSpeed * transform.forward;
+        rb.velocity = m_projectileRange * transform.forward;
 
         int time = PlayerPrefs.GetInt(m_playerStats.m_playerBPS);
         StartCoroutine(ShootingDelay(time));

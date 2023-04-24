@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ItemPickup : MonoBehaviour
 {
@@ -8,11 +9,13 @@ public class ItemPickup : MonoBehaviour
 
     [SerializeField] private string m_itemStat;
     [SerializeField] private int m_statNumber;
+    [SerializeField] private TMP_Text m_text;
 
 
     private void Awake()
     {
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+        m_text = GameObject.Find("ItemStats").GetComponent<TMP_Text>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,7 +23,7 @@ public class ItemPickup : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             CheckItemStats();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
@@ -61,5 +64,36 @@ public class ItemPickup : MonoBehaviour
             default:
                 break;
         }
+
+        m_text.text = m_itemStat + " : " + m_statNumber;
+        Debug.Log("Calling");
+        Invoke("disappearing", 3.0f);
+        //
+        //StartCoroutine(ShowText(3));
     }
+
+    private void disappearing()
+    {
+        m_text.text = " ";
+        Destroy(gameObject);
+    }
+
+    IEnumerator ShowText(int waitTime)
+    {
+        m_text.text = m_itemStat + " : " + m_statNumber;
+
+        yield return new WaitForSeconds(waitTime);
+
+        //for (int i = 0; i < m_text.text.Length; i++)
+        //{
+        //    m_text.text = m_text.text.Remove(i);
+        //}
+
+        //m_text.text = " ";
+        //Destroy(gameObject);
+
+        //StopCoroutine(ShowText(3));
+    }
+
+    
 }

@@ -31,6 +31,10 @@ public class PlayerStats : MonoBehaviour
 
             PlayerPrefs.Save();
         }
+        else
+        {
+            m_playerHealth = PlayerPrefs.GetInt(m_playerHealthEnd);
+        }
     }
 
     private void Update()

@@ -6,15 +6,16 @@ using TMPro;
 public class ItemPickup : MonoBehaviour
 {
     PlayerStats m_playerStats;
+    OnScreenStats m_onScreenStats;
 
     [SerializeField] private string m_itemStat;
     [SerializeField] private int m_statNumber;
     [SerializeField] private TMP_Text m_text;
 
-
     private void Awake()
     {
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+        m_onScreenStats = GameObject.Find("Stats").GetComponent<OnScreenStats>();
         m_text = GameObject.Find("ItemStats").GetComponent<TMP_Text>();
     }
 
@@ -37,7 +38,6 @@ public class ItemPickup : MonoBehaviour
                 speed += m_statNumber;
 
                 PlayerPrefs.SetInt(m_playerStats.m_playerWalkSpeed, speed);
-                PlayerPrefs.Save();
 
                 break;
 
@@ -47,7 +47,6 @@ public class ItemPickup : MonoBehaviour
                 range += m_statNumber;
 
                 PlayerPrefs.SetInt(m_playerStats.m_playerRange, range);
-                PlayerPrefs.Save();
 
                 break;
 
@@ -57,7 +56,6 @@ public class ItemPickup : MonoBehaviour
                 damage += m_statNumber;
 
                 PlayerPrefs.SetInt(m_playerStats.m_playerDamage, damage);
-                PlayerPrefs.Save();
 
                 break;
 
@@ -65,35 +63,16 @@ public class ItemPickup : MonoBehaviour
                 break;
         }
 
+        PlayerPrefs.Save();
+        m_onScreenStats.UpdateStats();
+
         m_text.text = m_itemStat + " : " + m_statNumber;
-        Debug.Log("Calling");
-        Invoke("disappearing", 3.0f);
-        //
-        //StartCoroutine(ShowText(3));
+        Invoke(nameof(TextDisappear), 3.0f);
     }
 
-    private void disappearing()
+    private void TextDisappear()
     {
         m_text.text = " ";
         Destroy(gameObject);
-    }
-
-    IEnumerator ShowText(int waitTime)
-    {
-        m_text.text = m_itemStat + " : " + m_statNumber;
-
-        yield return new WaitForSeconds(waitTime);
-
-        //for (int i = 0; i < m_text.text.Length; i++)
-        //{
-        //    m_text.text = m_text.text.Remove(i);
-        //}
-
-        //m_text.text = " ";
-        //Destroy(gameObject);
-
-        //StopCoroutine(ShowText(3));
-    }
-
-    
+    }    
 }

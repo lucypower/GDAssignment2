@@ -32,7 +32,7 @@ public class NextFloor : MonoBehaviour
 
     private void SaveHealth()
     {
-        PlayerPrefs.SetInt(m_playerStats.m_playerHealthEnd, m_playerStats.m_playerHealth);
+        PlayerPrefs.SetInt(m_playerStats.m_playerHealthEnd, (int)m_playerStats.m_playerHealth);
     }
 
     private void Reload()

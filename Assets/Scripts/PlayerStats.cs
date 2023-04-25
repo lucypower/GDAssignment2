@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int m_playerHealth;
+    public float m_playerHealth;
     [HideInInspector] public string m_playerHealthEnd = "PlayerHealth";
     [HideInInspector] public string m_playerWalkSpeed = "WalkSpeed";
     [HideInInspector] public string m_playerRange = "Range";

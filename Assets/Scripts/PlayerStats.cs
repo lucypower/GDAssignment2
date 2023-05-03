@@ -27,7 +27,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetInt(m_playerWalkSpeed, 10);
             PlayerPrefs.SetInt(m_playerRange, 7);
             PlayerPrefs.SetInt(m_playerDamage, 2);
-            PlayerPrefs.SetInt(m_playerBPS, 2);
+            PlayerPrefs.SetFloat(m_playerBPS, 1.0f);
 
             PlayerPrefs.Save();
         }

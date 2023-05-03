@@ -27,7 +27,7 @@ public class OnScreenStats : MonoBehaviour
     {
         int damage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
         int range = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
-        int fireRate = PlayerPrefs.GetInt(m_playerStats.m_playerBPS);
+        float fireRate = PlayerPrefs.GetFloat(m_playerStats.m_playerBPS);
 
         m_damageText.text = "DMG : " + damage;
         m_rangeText.text = "RNG : " + range;

@@ -9,7 +9,7 @@ public class ItemPickup : MonoBehaviour
     OnScreenStats m_onScreenStats;
 
     [SerializeField] private string m_itemStat;
-    [SerializeField] private int m_statNumber;
+    [SerializeField] private float m_statNumber;
     [SerializeField] private TMP_Text m_text;
 
     private void Awake()
@@ -35,7 +35,7 @@ public class ItemPickup : MonoBehaviour
             case "WalkSpeed":
 
                 int speed = PlayerPrefs.GetInt(m_playerStats.m_playerWalkSpeed);
-                speed += m_statNumber;
+                speed += (int)m_statNumber;
 
                 PlayerPrefs.SetInt(m_playerStats.m_playerWalkSpeed, speed);
 
@@ -44,7 +44,7 @@ public class ItemPickup : MonoBehaviour
             case "Range":
 
                 int range = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
-                range += m_statNumber;
+                range += (int)m_statNumber;
 
                 PlayerPrefs.SetInt(m_playerStats.m_playerRange, range);
 
@@ -53,9 +53,24 @@ public class ItemPickup : MonoBehaviour
             case "Damage":
 
                 int damage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
-                damage += m_statNumber;
+                damage += (int)m_statNumber;
 
                 PlayerPrefs.SetInt(m_playerStats.m_playerDamage, damage);
+
+                break;
+
+            case "BPS":
+
+                float bps = PlayerPrefs.GetFloat(m_playerStats.m_playerBPS);
+
+                if ((bps - m_statNumber) <= 0)
+                {
+                    bps = 0.1f;
+                }
+
+                bps += m_statNumber;
+
+                PlayerPrefs.SetFloat(m_playerStats.m_playerBPS, bps);
 
                 break;
 

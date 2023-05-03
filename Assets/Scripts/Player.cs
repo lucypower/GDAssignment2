@@ -78,13 +78,13 @@ public class Player : MonoBehaviour
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         rb.velocity = m_projectileRange * transform.forward;
 
-        int time = PlayerPrefs.GetInt(m_playerStats.m_playerBPS);
+        float time = PlayerPrefs.GetFloat(m_playerStats.m_playerBPS);
         StartCoroutine(ShootingDelay(time));
 
         Destroy(bullet, 1f);
     }
 
-    IEnumerator ShootingDelay(int waitTime)
+    IEnumerator ShootingDelay(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
         m_isShooting = false;

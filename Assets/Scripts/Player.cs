@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
         Vector2 getInput = m_playerController.Player.Move.ReadValue<Vector2>();
 
         m_moveInput = new Vector3(getInput.x, 0, getInput.y);
-        m_speed = PlayerPrefs.GetInt("WalkSpeed");
+        m_speed = PlayerPrefs.GetFloat("WalkSpeed");
 
         m_RB.velocity = m_moveInput * m_speed;
     }
@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
 
         var bullet = Instantiate(m_bullet, m_bulletStart.transform.position, Quaternion.identity);
 
-        m_projectileRange = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
+        m_projectileRange = PlayerPrefs.GetFloat(m_playerStats.m_playerRange);
 
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         rb.velocity = m_projectileRange * transform.forward;

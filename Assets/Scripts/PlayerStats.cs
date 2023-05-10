@@ -24,9 +24,9 @@ public class PlayerStats : MonoBehaviour
         {
             m_playerHealth = 100;
             PlayerPrefs.SetInt(m_playerHealthEnd, 100);
-            PlayerPrefs.SetInt(m_playerWalkSpeed, 10);
-            PlayerPrefs.SetInt(m_playerRange, 7);
-            PlayerPrefs.SetInt(m_playerDamage, 2);
+            PlayerPrefs.SetFloat(m_playerWalkSpeed, 10.0f);
+            PlayerPrefs.SetFloat(m_playerRange, 7.0f);
+            PlayerPrefs.SetFloat(m_playerDamage, 2.0f);
             PlayerPrefs.SetFloat(m_playerBPS, 1.0f);
 
             PlayerPrefs.Save();

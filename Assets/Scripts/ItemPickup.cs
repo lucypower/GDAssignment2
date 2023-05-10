@@ -34,28 +34,34 @@ public class ItemPickup : MonoBehaviour
         {
             case "WalkSpeed":
 
-                int speed = PlayerPrefs.GetInt(m_playerStats.m_playerWalkSpeed);
+                float speed = PlayerPrefs.GetFloat(m_playerStats.m_playerWalkSpeed);
                 speed += (int)m_statNumber;
 
-                PlayerPrefs.SetInt(m_playerStats.m_playerWalkSpeed, speed);
+                PlayerPrefs.SetFloat(m_playerStats.m_playerWalkSpeed, speed);
 
                 break;
 
             case "Range":
 
-                int range = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
+                float range = PlayerPrefs.GetFloat(m_playerStats.m_playerRange);
                 range += (int)m_statNumber;
 
-                PlayerPrefs.SetInt(m_playerStats.m_playerRange, range);
+                PlayerPrefs.SetFloat(m_playerStats.m_playerRange, range);
 
                 break;
 
             case "Damage":
 
-                int damage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
-                damage += (int)m_statNumber;
+                float damage = PlayerPrefs.GetFloat(m_playerStats.m_playerDamage);
 
-                PlayerPrefs.SetInt(m_playerStats.m_playerDamage, damage);
+                if ((damage - m_statNumber) <= 0)
+                {
+                    damage = 0.1f;
+                }
+
+                damage += m_statNumber;
+
+                PlayerPrefs.SetFloat(m_playerStats.m_playerDamage, damage);
 
                 break;
 

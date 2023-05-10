@@ -131,10 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bb3342745bf2248aef6dbb845d6b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 10
-  m_projectileSpeed: 10
   m_bullet: {fileID: 1765967415851065233, guid: 8a9a91bd992b3e740b21ddcf9f33b679, type: 3}
   m_bulletStart: {fileID: 5499077196289378566}
+  m_pauseMenu: {fileID: 0}
 --- !u!114 &5059737299680083041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42dafe61fc387b458ea622119d86141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 0
+  m_playerHealth: 0
+  m_playerHealthEnd: PlayerHealth
+  m_playerWalkSpeed: WalkSpeed
+  m_playerRange: Range
+  m_playerDamage: Damage
+  m_playerBPS: BulletPerSecond
+  m_deathMenu: {fileID: 0}
 --- !u!1 &3429130492676969280
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3429130492676969280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.637, y: 0.229, z: 0.494}
+  m_LocalPosition: {x: 0, y: 0.229, z: 0.647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -11,11 +11,12 @@ public class OnScreenStats : MonoBehaviour
     [SerializeField] private TMP_Text m_damageText;
     [SerializeField] private TMP_Text m_rangeText;
     [SerializeField] private TMP_Text m_fireRateText;
+    [SerializeField] private TMP_Text m_walkSpeedText;
     [SerializeField] private Image m_healthBar;
 
     private int m_health;
 
-    private void Start()
+    private void Awake()
     {
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
 
@@ -25,13 +26,15 @@ public class OnScreenStats : MonoBehaviour
 
     public void UpdateStats()
     {
-        int damage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
-        int range = PlayerPrefs.GetInt(m_playerStats.m_playerRange);
+        float damage = PlayerPrefs.GetFloat(m_playerStats.m_playerDamage);
+        float range = PlayerPrefs.GetFloat(m_playerStats.m_playerRange);
         float fireRate = PlayerPrefs.GetFloat(m_playerStats.m_playerBPS);
+        float walkSpeed = PlayerPrefs.GetFloat(m_playerStats.m_playerWalkSpeed);
 
         m_damageText.text = "DMG : " + damage;
         m_rangeText.text = "RNG : " + range;
         m_fireRateText.text = "FR : " + fireRate;
+        m_walkSpeedText.text = "WLK : " + walkSpeed;
     }
 
     public void UpdateHealthBar()

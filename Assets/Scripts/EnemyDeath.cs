@@ -8,7 +8,7 @@ public class EnemyDeath : MonoBehaviour
     EnemyStats m_enemyStats;
     PlayerStats m_playerStats;
 
-    int m_playerDamage;
+    float m_playerDamage;
 
     private void Awake()
     {
@@ -28,8 +28,8 @@ public class EnemyDeath : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            m_playerDamage = PlayerPrefs.GetInt(m_playerStats.m_playerDamage);
-            m_enemyStats.m_health -= m_playerDamage;
+            m_playerDamage = PlayerPrefs.GetFloat(m_playerStats.m_playerDamage);
+            m_enemyStats.m_health -= (int)m_playerDamage;
             Destroy(collision.gameObject);
 
             if (m_enemyStats.m_health <= 0)

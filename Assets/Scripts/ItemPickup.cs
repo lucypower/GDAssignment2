@@ -54,11 +54,6 @@ public class ItemPickup : MonoBehaviour
 
                 float damage = PlayerPrefs.GetFloat(m_playerStats.m_playerDamage);
 
-                if ((damage - m_statNumber) <= 0)
-                {
-                    damage = 0.1f;
-                }
-
                 damage += m_statNumber;
 
                 PlayerPrefs.SetFloat(m_playerStats.m_playerDamage, damage);

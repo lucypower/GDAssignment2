@@ -16,7 +16,7 @@ public class OnScreenStats : MonoBehaviour
 
     private int m_health;
 
-    private void Start()
+    private void Awake()
     {
         m_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
 
